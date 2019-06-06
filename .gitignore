@@ -3,9 +3,11 @@
 /public/storage
 /public/js
 /public/css
+/public/mix-manifest.json
 /storage/*.key
 /vendor
 .env
+.idea
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
