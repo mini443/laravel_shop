@@ -55,4 +55,11 @@ class User extends Authenticatable implements MustVerifyEmail
             ->withTimestamps()
             ->orderBy('user_favorite_products.created_at', 'desc');
     }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function cartItems(){
+        return $this->hasMany(CartItem::class);
+    }
 }
